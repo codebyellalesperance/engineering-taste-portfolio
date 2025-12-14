@@ -72,8 +72,8 @@ export const Hero: React.FC = () => {
       <div className="relative z-10">
         {/* Line 1 */}
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 mb-4 md:mb-8">
-          <h1 className="hero-line text-[10vw] leading-[0.9] tracking-tight font-serif text-neutral-950 dark:text-white transition-colors duration-500">
-            Global
+          <h1 className="hero-line text-[7vw] leading-[0.9] tracking-tight font-serif text-neutral-950 dark:text-white transition-colors duration-500">
+            Avid
           </h1>
 
           <div
@@ -81,14 +81,14 @@ export const Hero: React.FC = () => {
             className="hero-image w-[15vw] h-[18vw] md:w-32 md:h-40 rounded-2xl overflow-hidden relative top-2 rotate-3 bg-neutral-100 shadow-xl border-4 border-white dark:border-neutral-800"
           >
             <img
-              src="/ella.jpg"
+              src="/ctrl-alt.webp"
               alt="Portrait"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
           </div>
 
           <h1 className="hero-line text-[10vw] leading-[0.9] tracking-tight font-serif text-neutral-950 dark:text-white transition-colors duration-500">
-            talent,
+            builder,
           </h1>
         </div>
 

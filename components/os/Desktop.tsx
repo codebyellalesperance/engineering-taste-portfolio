@@ -198,7 +198,7 @@ export const Desktop: React.FC<DesktopProps> = ({ className = "" }) => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {[
                             { title: 'Nasdaq AI Sandbox', desc: 'Internal tooling for AI workflow standardization.', icon: Terminal, color: 'blue' },
-                            { title: 'Ctrl Create Labs', desc: 'Experimental design and tech publication.', icon: Globe, color: 'purple' },
+                            { title: 'Engineering Taste', desc: 'Experimental design and tech publication.', icon: Globe, color: 'purple' },
                             { title: 'Spatial Experiments', desc: 'Three.js and WebGL playground.', icon: Box, color: 'pink' },
                         ].map((project, i) => (
                             <div key={i} className="group p-6 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors cursor-pointer">

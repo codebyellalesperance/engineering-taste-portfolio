@@ -21,7 +21,7 @@ const fallbackProjects: Project[] = [
         description: 'Spotify DJ and Daylist keep fumbling, so I built my own music discovery tool.',
         category: 'ai',
         tags: ['Spotify API', 'AI', 'Music'],
-        substackUrl: 'https://ctrlcreatelabs.substack.com/p/taste-swipe-spotify-dj-and-daylist'
+        substackUrl: 'https://engineeringtaste.substack.com/p/taste-swipe-spotify-dj-and-daylist'
     },
     {
         id: '2',
@@ -29,7 +29,7 @@ const fallbackProjects: Project[] = [
         description: 'Flask + Claude + Gemini: From 180s to 8s — a performance deep dive in optimization.',
         category: 'ai',
         tags: ['Flask', 'Claude', 'Gemini', 'Performance'],
-        substackUrl: 'https://ctrlcreatelabs.substack.com/p/flask-claude-gemini-building-an-ai'
+        substackUrl: 'https://engineeringtaste.substack.com/p/flask-claude-gemini-building-an-ai'
     },
     {
         id: '3',
@@ -37,7 +37,7 @@ const fallbackProjects: Project[] = [
         description: 'Solving the "Do we have milk?" problem with three databases and a typo-tolerant search algorithm.',
         category: 'web',
         tags: ['React Native', 'Expo', 'Search'],
-        substackUrl: 'https://ctrlcreatelabs.substack.com/p/i-built-a-pantry-app-that-actually'
+        substackUrl: 'https://engineeringtaste.substack.com/p/i-built-a-pantry-app-that-actually'
     },
     {
         id: '4',
@@ -45,7 +45,7 @@ const fallbackProjects: Project[] = [
         description: 'React Native + Expo + NativeWind — because coordinating with friends is impossible.',
         category: 'web',
         tags: ['React Native', 'Expo', 'NativeWind'],
-        substackUrl: 'https://ctrlcreatelabs.substack.com/p/whim-the-spontaneous-hangout-app'
+        substackUrl: 'https://engineeringtaste.substack.com/p/whim-the-spontaneous-hangout-app'
     },
     {
         id: '5',
@@ -53,7 +53,7 @@ const fallbackProjects: Project[] = [
         description: 'What worked, what broke, and what I learned building a personal AI with memory.',
         category: 'ai',
         tags: ['Local AI', 'Memory', 'Experiments'],
-        substackUrl: 'https://ctrlcreatelabs.substack.com/p/i-built-a-local-ai-that-remembers'
+        substackUrl: 'https://engineeringtaste.substack.com/p/i-built-a-local-ai-that-remembers'
     }
 ];
 
@@ -119,7 +119,7 @@ export const CommandPalette: React.FC = () => {
             try {
                 // Use a CORS proxy for client-side fetching
                 const corsProxy = 'https://api.allorigins.win/raw?url=';
-                const feedUrl = encodeURIComponent('https://ctrlcreatelabs.substack.com/feed');
+                const feedUrl = encodeURIComponent('https://engineeringtaste.substack.com/feed');
 
                 const response = await fetch(`${corsProxy}${feedUrl}`);
                 if (!response.ok) throw new Error('Failed to fetch');

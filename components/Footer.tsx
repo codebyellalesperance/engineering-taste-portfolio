@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
             scrollTrigger: {
               trigger: sectionRef.current,
               start: 'top 80%',
-              toggleActions: 'play none none reverse',
+              toggleActions: 'play none none none',
             },
           }
         );
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
             scrollTrigger: {
               trigger: sectionRef.current,
               start: 'top 80%',
-              toggleActions: 'play none none reverse',
+              toggleActions: 'play none none none',
             },
           }
         );
@@ -85,8 +85,7 @@ export const Footer: React.FC = () => {
               <h2
                 ref={headingRef}
                 className="leading-[0.8] font-serif font-medium text-neutral-950 dark:text-white tracking-tight transition-all duration-500 group-hover:opacity-40"
-                style={{ fontSize: 'clamp(3rem, 12vw, 8rem)' }}
-                style={{ perspective: '1000px' }}
+                style={{ fontSize: 'clamp(3rem, 12vw, 8rem)', perspective: '1000px' }}
               >
                 Let's Chat.
               </h2>

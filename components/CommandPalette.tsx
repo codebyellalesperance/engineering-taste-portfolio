@@ -276,11 +276,8 @@ export const CommandPalette: React.FC = () => {
                             ? 'ring-2 ring-neutral-400 dark:ring-neutral-500'
                             : 'ring-1 ring-neutral-200 dark:ring-neutral-800'
                         }`}
-                    style={{
-                        background: 'linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(250,250,250,0.95))',
-                    }}
                 >
-                    {/* Glassmorphism backdrop for dark mode */}
+                    {/* Background backdrop */}
                     <div className="absolute inset-0 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl -z-10" />
 
                     {/* Search Input */}

@@ -220,14 +220,14 @@ export const Hero: React.FC = () => {
           </div>
 
           <h1 className="hero-line leading-[0.9] tracking-tight font-serif text-neutral-950 dark:text-white transition-colors duration-500" style={{ fontSize: 'clamp(2.5rem, 10vw, 10rem)' }}>
-            not
+            powered
           </h1>
         </div>
 
         {/* Line 3 */}
         <div className="flex flex-wrap items-baseline justify-center gap-3 sm:gap-4 md:gap-8">
           <h1 className="hero-line leading-[0.9] tracking-tight font-serif text-neutral-400 transition-colors duration-500" style={{ fontSize: 'clamp(2.5rem, 10vw, 10rem)' }}>
-            trends.
+            by code.
           </h1>
         </div>
       </div>

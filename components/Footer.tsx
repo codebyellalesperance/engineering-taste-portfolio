@@ -123,8 +123,12 @@ export const Footer: React.FC = () => {
                 </a>
               </MagneticButton>
             </div>
-            <div className="pt-4">
-              <span className="text-neutral-400 text-sm">
+            <div className="pt-4 flex flex-col gap-2 text-sm">
+              <div className="flex gap-4 justify-end">
+                <a href="/privacy.html" className="text-neutral-400 hover:text-neutral-600 dark:hover:text-white transition-colors">Privacy Policy</a>
+                <a href="/terms.html" className="text-neutral-400 hover:text-neutral-600 dark:hover:text-white transition-colors">Terms of Service</a>
+              </div>
+              <span className="text-neutral-400">
                 © {new Date().getFullYear()} Engineering Taste
               </span>
             </div>

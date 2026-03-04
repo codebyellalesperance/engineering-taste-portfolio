@@ -4,11 +4,20 @@
 
 Personal portfolio site at ctrlcreatelabs.com. Features a Raycast-style command palette for project browsing, interactive terminal, GSAP and Framer Motion animations, dark/light mode, and Substack RSS integration. Built with React 19 and deployed on Vercel.
 
-## Absolute Rules
+## Conventions
 
-- NEVER use emojis anywhere in the project. No emojis in code, comments, commit messages, documentation, UI strings, error messages, logs, or any other output. This is non-negotiable.
-- NEVER use emojis in commit messages, branch names, PR titles, or PR descriptions.
-- NEVER add emojis to any file in this repository.
+This project follows `~/.claude/docs/conventions.md` (v1).
+Project-specific extensions below.
+
+### Scopes
+
+`ui`, `content`, `seo`, `deploy`, `animation`
+
+### Code Style Extensions
+
+- TypeScript with type annotations on all function signatures
+- Functional components with hooks
+- Import alias: `@/*` resolves to project root
 
 ## Stack
 
@@ -54,57 +63,6 @@ engineering-taste-portfolio/
 
 - Remote: `origin https://github.com/codebyellalesperance/engineering-taste-portfolio.git`
 - Push to main triggers Vercel auto-deploy.
-
-### Branch Naming
-
-```
-<type>/<short-description>
-```
-
-Types: `feat/`, `fix/`, `refactor/`, `chore/`, `docs/`, `test/`, `perf/`, `style/`
-
-Examples:
-- `feat/palette-thief-drop-page`
-- `fix/command-palette-rss-fallback`
-- `style/hero-animation-timing`
-- `chore/update-substack-static-data`
-
-### Commit Messages
-
-Follow Conventional Commits. No emojis. Format:
-
-```
-<type>(<scope>): <short summary>
-
-<optional body -- explain WHY, not WHAT>
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
-```
-
-Types: `feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `perf`, `style`
-
-Scopes: `ui`, `content`, `seo`, `deploy`, `animation`
-
-Examples:
-- `feat(content): add Palette Thief project to command palette`
-- `fix(ui): prevent layout shift on theme toggle`
-- `style(animation): refine hero parallax easing curve`
-- `chore(content): update Substack RSS static fallback data`
-
-Rules:
-- Subject line max 72 characters
-- Use imperative mood
-- Do not end subject with a period
-- Body should explain the reasoning, not restate the diff
-- Always include the Co-Authored-By trailer
-
-## Code Style
-
-- TypeScript with type annotations on all function signatures
-- Functional components with hooks
-- No dead code -- delete unused code, do not comment it out
-- No premature abstractions
-- Import alias: `@/*` resolves to project root
 
 ## Key Commands
 

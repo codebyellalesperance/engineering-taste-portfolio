@@ -128,7 +128,7 @@ export const MenuOverlay: React.FC<MenuOverlayProps> = ({ isOpen, onClose }) => 
                     <a
                       href={link.href}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="group flex items-center gap-2 text-xl text-neutral-300 hover:text-white transition-colors"
                     >
                       {link.title}

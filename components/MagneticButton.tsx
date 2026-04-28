@@ -5,7 +5,7 @@ interface MagneticButtonProps {
   children: React.ReactNode;
   strength?: number;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
 }
 
 export const MagneticButton: React.FC<MagneticButtonProps> = ({

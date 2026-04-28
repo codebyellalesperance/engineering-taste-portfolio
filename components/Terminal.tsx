@@ -7,6 +7,9 @@ interface TerminalLine {
   isHtml?: boolean;
 }
 
+const escapeHtml = (s: string): string =>
+  s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+
 const COMMANDS: Record<string, string | (() => string)> = {
   help: `
 Available commands:
@@ -76,9 +79,9 @@ turning ideas into tools that feel inevitable.
 <span class="text-cyan-400">Let's Connect!</span>
 
 <span class="text-green-400">Email</span>    <a href="mailto:ella.lesperance@outlook.com" class="text-blue-400 underline">ella.lesperance@outlook.com</a>
-<span class="text-green-400">LinkedIn</span> <a href="https://linkedin.com/in/ella-lesperance" target="_blank" class="text-blue-400 underline">linkedin.com/in/ella-lesperance</a>
-<span class="text-green-400">GitHub</span>   <a href="https://github.com/codebyellalesperance" target="_blank" class="text-blue-400 underline">github.com/codebyellalesperance</a>
-<span class="text-green-400">Substack</span> <a href="https://substack.com/@engineeringtaste" target="_blank" class="text-blue-400 underline">substack.com/@engineeringtaste</a>
+<span class="text-green-400">LinkedIn</span> <a href="https://linkedin.com/in/ella-lesperance" target="_blank" rel="noopener noreferrer" class="text-blue-400 underline">linkedin.com/in/ella-lesperance</a>
+<span class="text-green-400">GitHub</span>   <a href="https://github.com/codebyellalesperance" target="_blank" rel="noopener noreferrer" class="text-blue-400 underline">github.com/codebyellalesperance</a>
+<span class="text-green-400">Substack</span> <a href="https://substack.com/@engineeringtaste" target="_blank" rel="noopener noreferrer" class="text-blue-400 underline">substack.com/@engineeringtaste</a>
 `,
 
   projects: `
@@ -274,7 +277,7 @@ export const Terminal: React.FC = () => {
         ...prev,
         {
           type: 'output',
-          content: `<span class="text-red-400">Command not found: ${cmd}</span>\n<span class="text-neutral-500">Type 'help' for available commands.</span>`,
+          content: `<span class="text-red-400">Command not found: ${escapeHtml(cmd)}</span>\n<span class="text-neutral-500">Type 'help' for available commands.</span>`,
           isHtml: true,
         },
       ]);

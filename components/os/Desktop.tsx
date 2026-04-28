@@ -225,21 +225,21 @@ export const Desktop: React.FC<DesktopProps> = ({ className = "" }) => {
             content: (
                 <div className="h-full p-8 text-white flex flex-col justify-center">
                     <div className="space-y-4 max-w-md mx-auto w-full">
-                        <a href="mailto:hello@example.com" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
+                        <a href="mailto:ella.lesperance@outlook.com" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
                             <Mail className="text-white/70 group-hover:text-white transition-colors" />
                             <div>
                                 <div className="font-medium text-white/90">Email Me</div>
-                                <div className="text-xs text-white/50">hello@example.com</div>
+                                <div className="text-xs text-white/50">ella.lesperance@outlook.com</div>
                             </div>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
+                        <a href="https://linkedin.com/in/ella-lesperance" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
                             <Linkedin className="text-white/70 group-hover:text-white transition-colors" />
                             <div>
                                 <div className="font-medium text-white/90">LinkedIn</div>
                                 <div className="text-xs text-white/50">Connect professionally</div>
                             </div>
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
+                        <a href="https://github.com/codebyellalesperance" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 group">
                             <Github className="text-white/70 group-hover:text-white transition-colors" />
                             <div>
                                 <div className="font-medium text-white/90">GitHub</div>

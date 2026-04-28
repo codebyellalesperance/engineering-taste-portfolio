@@ -227,7 +227,7 @@ export const CommandPalette: React.FC = () => {
             case 'Enter':
                 e.preventDefault();
                 if (filteredProjects[selectedIndex]) {
-                    window.open(filteredProjects[selectedIndex].substackUrl, '_blank');
+                    window.open(filteredProjects[selectedIndex].substackUrl, '_blank', 'noopener,noreferrer');
                 }
                 break;
         }

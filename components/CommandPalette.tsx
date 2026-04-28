@@ -117,11 +117,10 @@ export const CommandPalette: React.FC = () => {
     useEffect(() => {
         const fetchSubstackPosts = async () => {
             try {
-                // Use a CORS proxy for client-side fetching
-                const corsProxy = 'https://api.allorigins.win/raw?url=';
-                const feedUrl = encodeURIComponent('https://engineeringtaste.substack.com/feed');
-
-                const response = await fetch(`${corsProxy}${feedUrl}`);
+                // Same-origin serverless function (api/substack.ts) proxies the
+                // Substack feed in production. In `npm run dev` this 404s and
+                // we fall back to the static fallbackProjects list below.
+                const response = await fetch('/api/substack');
                 if (!response.ok) throw new Error('Failed to fetch');
 
                 const xmlText = await response.text();
